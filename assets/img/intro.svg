@@ -1,0 +1,98 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1b2a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a3a5c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="harmBody" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8e8e8;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#c0c0c0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a0a0a0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="harmTop" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4a017;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b8860b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="noteGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7eb8d4;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#d4a017;stop-opacity:0.8" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle grid lines -->
+  <g opacity="0.05" stroke="#7eb8d4" stroke-width="1">
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+  </g>
+
+  <!-- Floating music notes decoration -->
+  <text x="60" y="120" font-size="48" fill="#7eb8d4" opacity="0.15" font-family="serif">♪</text>
+  <text x="700" y="80" font-size="36" fill="#d4a017" opacity="0.2" font-family="serif">♫</text>
+  <text x="730" y="420" font-size="52" fill="#7eb8d4" opacity="0.12" font-family="serif">♪</text>
+  <text x="30" y="400" font-size="30" fill="#d4a017" opacity="0.18" font-family="serif">♬</text>
+
+  <!-- Main Harmonica Body - center of image -->
+  <g transform="translate(130, 200)">
+    <!-- Cover plate top (gold) -->
+    <rect x="0" y="0" width="540" height="25" rx="6" fill="url(#harmTop)" />
+    <!-- Main body -->
+    <rect x="0" y="25" width="540" height="65" rx="0" fill="url(#harmBody)" />
+    <!-- Cover plate bottom (gold) -->
+    <rect x="0" y="90" width="540" height="25" rx="6" fill="url(#harmTop)" />
+    
+    <!-- Reed holes row 1 -->
+    <g fill="#333" opacity="0.9">
+      <rect x="20" y="35" width="28" height="22" rx="2"/>
+      <rect x="58" y="35" width="28" height="22" rx="2"/>
+      <rect x="96" y="35" width="28" height="22" rx="2"/>
+      <rect x="134" y="35" width="28" height="22" rx="2"/>
+      <rect x="172" y="35" width="28" height="22" rx="2"/>
+      <rect x="210" y="35" width="28" height="22" rx="2"/>
+      <rect x="248" y="35" width="28" height="22" rx="2"/>
+      <rect x="286" y="35" width="28" height="22" rx="2"/>
+      <rect x="324" y="35" width="28" height="22" rx="2"/>
+      <rect x="362" y="35" width="28" height="22" rx="2"/>
+      <rect x="400" y="35" width="28" height="22" rx="2"/>
+      <rect x="438" y="35" width="28" height="22" rx="2"/>
+      <rect x="476" y="35" width="28" height="22" rx="2"/>
+    </g>
+    <!-- Reed holes row 2 -->
+    <g fill="#333" opacity="0.9">
+      <rect x="20" y="62" width="28" height="22" rx="2"/>
+      <rect x="58" y="62" width="28" height="22" rx="2"/>
+      <rect x="96" y="62" width="28" height="22" rx="2"/>
+      <rect x="134" y="62" width="28" height="22" rx="2"/>
+      <rect x="172" y="62" width="28" height="22" rx="2"/>
+      <rect x="210" y="62" width="28" height="22" rx="2"/>
+      <rect x="248" y="62" width="28" height="22" rx="2"/>
+      <rect x="286" y="62" width="28" height="22" rx="2"/>
+      <rect x="324" y="62" width="28" height="22" rx="2"/>
+      <rect x="362" y="62" width="28" height="22" rx="2"/>
+      <rect x="400" y="62" width="28" height="22" rx="2"/>
+      <rect x="438" y="62" width="28" height="22" rx="2"/>
+      <rect x="476" y="62" width="28" height="22" rx="2"/>
+    </g>
+    <!-- Screws -->
+    <circle cx="15" cy="57" r="5" fill="#888"/>
+    <circle cx="270" cy="57" r="5" fill="#888"/>
+    <circle cx="525" cy="57" r="5" fill="#888"/>
+    <!-- Highlight shine -->
+    <rect x="0" y="25" width="540" height="8" rx="0" fill="white" opacity="0.2"/>
+  </g>
+
+  <!-- Sound wave emanating from harmonica -->
+  <g opacity="0.3" stroke="url(#noteGrad)" stroke-width="2" fill="none">
+    <ellipse cx="400" cy="257" rx="300" ry="60"/>
+    <ellipse cx="400" cy="257" rx="340" ry="80"/>
+    <ellipse cx="400" cy="257" rx="380" ry="100"/>
+  </g>
+
+  <!-- Brand text -->
+  <text x="400" y="380" font-size="42" fill="#d4a017" font-family="Georgia, serif" text-anchor="middle" font-weight="bold" letter-spacing="4">HARMONICA HUB</text>
+  <text x="400" y="415" font-size="16" fill="#7eb8d4" font-family="Arial, sans-serif" text-anchor="middle" letter-spacing="8">PREMIUM INSTRUMENTS</text>
+</svg>
